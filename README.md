@@ -1,12 +1,35 @@
-# React + Vite
+# 🌟 Imperial Grand Hotel – Frontend Assignment (Growthzi)
+This is a React.js-based frontend assignment developed as part of the Growthzi frontend developer hiring process. The project is based entirely on the Figma design provided by Growthzi and recreated using React functional components, pure CSS (no Tailwind), and React Router DOM for routing between pages.
+> ✨ A real-world frontend assignment completed using **React.js** and **pure CSS**, implementing dynamic components like "Add Button" and inline "Edit" functionality.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 📄 Assignment Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project was developed as part of the **Growthzi Frontend Developer Hiring Task**.
 
-## Expanding the ESLint configuration
+The goal was to:
+- 🔧 Build **2 fully responsive pages** based on the provided Figma
+- 🎯 Implement:
+  - ➕ **“+ Add Button” Feature**
+  - ✏️ **Edit Feature** with API console integration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔍 Features
+
+### 🧱 Pages Designed
+- ✅ `Home Page`: Contains service section and booking form
+- ✅ `404 Page`: Custom error page with navigation
+
+### 🔘 "+ Add Button" Functionality
+- When clicked, opens a **modal form** with:
+  - 🔤 Button Text input
+  - 🎨 Color picker
+  - 🎯 Style dropdown: Fill / Border / Dotted
+  - 🔠 Size dropdown: Small / Medium / Large
+- 🛠️ On **Save**, the CTA button is created with selected properties.
+
+### ✍️ Edit Feature (Inline Editing)
+- Allows user to click "Edit" and **update heading text**.
+- On Save, logs the change in **backend format** to the console like:
