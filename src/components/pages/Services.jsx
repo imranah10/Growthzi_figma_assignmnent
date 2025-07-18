@@ -1,12 +1,12 @@
 import React from 'react'
 import style from '../pages/Services.module.css'
 import { ServiceCard } from './ServiceCard'
-import { Hero } from './Hero'
+// import { Hero } from './Hero'
 
 export const Services = () => {
   return (
  <>
- <Hero/>
+{/*  <Hero/> */}
   <div className={style.main}>
       <div className={style.service_parent_container}>
       {/* Vertical Line */}
