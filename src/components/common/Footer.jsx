@@ -4,8 +4,8 @@ import vector from '../images/navlogo/Vector.svg'
 import style from './Footer.module.css'
 import { FaChevronDown } from "react-icons/fa";
 import { Link } from 'react-router-dom';
-import line1 from '../images/footer/line1.png'
-import line2 from '../images/footer/line2.png'
+import line1 from '../images/footer/Line1.png'
+import line2 from '../images/footer/Line2.png'
 import { FiTwitter } from "react-icons/fi";
 import { FaFacebookF } from "react-icons/fa";
 
