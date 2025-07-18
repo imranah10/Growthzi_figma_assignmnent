@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FaAngleDown, FaBars, FaTimes } from 'react-icons/fa';
 import style from './Navbar.module.css';
-import navlogo from '../images/navlogo/vector.png';
-import vector from '../images/navlogo/vector.svg';
+import navlogo from '../images/navlogo/Vector.png';
+import vector from '../images/navlogo/Vector.svg';
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
