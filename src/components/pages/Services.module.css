@@ -1,0 +1,213 @@
+.main{
+  background-color: whitesmoke;
+}
+.service_parent_container {
+  padding: 50px 0;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+
+.vertical_line {
+  width: 2px;
+  height: 100px; 
+  background-color: #d9a72c; 
+  margin-left: 7.5%;
+  padding: 20px 0;
+}
+
+.inner_content {
+  width: 85%;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+.service_intro_heading {
+  color: #e4a633;
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.service_slogan {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.service_slogan h2 {
+  font-size: 36px;
+  color: #1a1a1a;
+}
+
+.service_slogan p {
+  font-size: 16px;
+  color: #444;
+  max-width: 400px;
+}
+
+.card_section {
+  margin-top: 40px;
+}
+
+.card_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.reverse {
+  direction: rtl;
+}
+
+.blank_box {
+  background-color: #e7e7e7;
+  height: 329px;
+}
+
+.content_box {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  direction: ltr;
+}
+
+.card_icon {
+  width: 30px;
+  margin-bottom: 10px;
+    color: #e4a633;
+}
+
+.card_title {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card_desc {
+  font-size: 14px;
+  color: #cfcfcf;
+  margin-bottom: 20px;
+}
+
+.card_line {
+  height: 1px;
+  width: 120px;
+  background-color: white;
+  margin: 5px 0;
+  transition: background-color 0.3s;
+}
+
+.discover_btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.arrow_icon {
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.discover_btn:hover,
+.discover_btn:hover + .card_line,
+.card_line:hover {
+  color: #e4a633;
+  /* background-color: #e4a633; */
+}
+
+
+/* ========== RESPONSIVE: Tablets (max-width: 992px) ========== */
+@media (max-width: 992px) {
+  .service_slogan {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .service_slogan h2 {
+    font-size: 28px;
+  }
+
+  .service_slogan p {
+    max-width: 100%;
+    font-size: 15px;
+  }
+
+  .card_row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .blank_box {
+    height: 280px;
+  }
+
+  .content_box {
+    height: auto;
+    padding: 30px;
+  }
+}
+
+/* ========== RESPONSIVE: Mobile (max-width: 600px) ========== */
+@media (max-width: 600px) {
+  .vertical_line {
+    margin-left: 0;
+    height: 60px;
+  }
+
+  .service_intro_heading {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .service_slogan h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .service_slogan p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  .inner_content {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .content_box {
+    padding: 20px;
+  }
+
+  .card_title {
+    font-size: 16px;
+  }
+
+  .card_desc {
+    font-size: 13px;
+  }
+
+  .discover_btn {
+    font-size: 13px;
+  }
+
+  .arrow_icon {
+    font-size: 14px;
+  }
+}

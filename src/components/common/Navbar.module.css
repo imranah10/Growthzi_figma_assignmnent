@@ -1,0 +1,139 @@
+.nav_parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+    background: hwb(0 5% 95% / 0.808)
+ 
+
+}
+.down_arrow{
+  color: white;
+}
+
+.navlogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+  font-weight: bold;
+  color: white;
+}
+.logo_name :first-child{
+  font-weight: 100;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logo_name :last-child{
+  font-size: 12px;
+  font-weight: 100;
+}
+
+.nav_child_container {
+  display: flex;
+  gap: 1.5rem;
+}
+.image_parent{
+  position: relative;
+}
+.image_parent :first-child{
+  position: absolute;
+  left: 27%;
+}
+.navlink.active{
+    color: rgb(194, 139, 38);
+}
+
+.navlink {
+  font-size: 15px;
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 0.3s;
+}
+
+.navlink:hover {
+  color: #007bff;
+}
+
+/* Active link */
+.active {
+  color: #BF9766
+}
+
+.hamburger_icon {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile view hamburger show */
+@media (max-width: 768px) {
+  .hamburger_icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    z-index: 1001;
+  }
+
+  .nav_child_container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #111;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    padding: 1rem 0;
+    z-index: 1000;
+  }
+
+  .show_menu {
+    display: flex !important;
+  }
+}
+
+.dropdown_wrapper {
+  position: relative;
+}
+
+.dropdown_wrapper:hover .dropdown_menu {
+  display: flex;
+}
+
+.dropdown_menu {
+  position: absolute;
+  /* margin-top: 20px; */
+  top: 100%;
+  left: -55%;
+  background-color: white;
+  padding: 0.5rem 0;
+  min-width: 150px;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+}
+
+.dropdown_item {
+  padding: 8px 16px;
+  color: gray;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dropdown_item:hover {
+  color: #e4a633;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+

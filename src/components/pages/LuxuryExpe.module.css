@@ -1,0 +1,222 @@
+.main{
+   background: linear-gradient(
+    to bottom,
+    hwb(0 6% 94% / 0.822),
+    rgba(39, 38, 38, 0.6),
+    hwb(0 8% 92% / 0.815)
+  );
+}
+.box_parent {
+    position: relative;
+ 
+  height: 170px;
+  margin: 120px 0px;
+ 
+  padding: 40px 0;
+}
+
+.box_content {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.heading {
+  color: white;
+  font-size: 2.8rem;
+  font-weight: 300;
+  width: 45%;
+  line-height: 1.2;
+}
+
+.checkin_out_parent {
+  background-color: #f5850569;
+  width: 20%;
+  height: 300px;
+  right: 90px;
+  position: absolute;
+  border-radius: 3px;
+  padding: 32px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.checkin_out_parent label {
+  font-weight: 600;
+  margin-bottom: 4px;
+  display: block;
+  color: #333;
+  padding: 10px;
+  
+}
+.checkin_out_parent select {
+    background-color: #8f4e1969;
+    
+}
+
+.checkin_out_parent input
+ {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: white;
+  background-color: #8f4e1969;
+}
+.checkin_out_parent select{
+    width: 45%;
+    padding: 10px;
+    color: white;
+}
+
+.room_guest_parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.room_guest_parent div {
+  flex: 1;
+}
+.room_guest_parent :first-child select,.room_guest_parent :last-child select{
+    width: 100%;
+}
+
+
+.check_btn {
+  margin-top: 10px;
+  
+  color: white;
+  padding: 10px 15px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+ 
+  font-weight: 600;
+  gap: 8px;
+  transition: 0.3s ease;
+}
+
+.check_btn:hover {
+  color: #333;
+}
+
+
+
+
+
+
+.input_wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input_wrapper input {
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.input_wrapper .icon {
+  position: absolute;
+  right: 10px;
+  color: #999;
+  pointer-events: none;
+}
+
+
+/* ========== Tablets (min-width: 601px and max-width: 992px) ========== */
+@media (min-width: 601px) and (max-width: 992px) {
+  .box_parent {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .box_content {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .heading {
+    width: 100%;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .checkin_out_parent {
+    position: relative;
+    width: 100%;
+    height: auto;
+    right: 0;
+    padding: 28px 20px;
+    margin-top: 20px;
+    background-color: #f5850569;
+  }
+
+  .room_guest_parent {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .check_btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .input_wrapper input {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
+
+
+/* ========== Mobile (max-width: 600px) ========== */
+@media (max-width: 600px) {
+  .box_parent {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .checkin_out_parent {
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .check_btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .room_guest_parent {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .room_guest_parent div select {
+    width: 100%;
+  }
+
+  .input_wrapper input {
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .icon {
+    right: 10px;
+  }
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
+.main {
+  background: linear-gradient(
+    to bottom,
+    hwb(0 6% 94% / 0.822),
+    rgba(39, 38, 38, 0.6),
+    hwb(0 8% 92% / 0.815)
+  );
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 50px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.contentBox {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.textWrapper {
+  text-align: right;
+  font-family: 'Forum', serif;
+  max-width: 600px;
+}
+
+.textWrapper h1 {
+  font-family: Forum;
+font-weight: 100;
+font-style: Regular;
+font-size: 220px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+
+
+
+}
+
+.textWrapper h4 {
+  font-size: 48px;
+  font-weight: 100;
+  padding: 40px 0;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+
+}
+
+.textWrapper p {
+  font-family: Poppins;
+font-weight: 100;
+font-style: Light;
+font-size: 18px;
+line-height: 100%;
+letter-spacing: 0%;
+
+padding: 20px 0;
+
+}
+
+.card_line {
+  height: 1px;
+  width: 140px;
+  background-color: white;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+  margin-left: auto;
+}
+
+.discover_btn {
+  
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-left: auto;
+  justify-content: flex-end;
+}
+
+.arrow_icon {
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.discover_btn:hover,
+.discover_btn:hover .arrow_icon {
+  color: #e4a633;
+}
+
+@media (max-width: 768px) {
+  .main {
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .textWrapper {
+    text-align: center;
+  }
+
+  .textWrapper h1 {
+    font-size: 120px;
+  }
+
+  .textWrapper h4 {
+    font-size: 28px;
+  }
+
+  .textWrapper p {
+    font-size: 16px;
+  }
+
+  .card_line,
+  .discover_btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

@@ -1,0 +1,260 @@
+.main {
+  background-color: #1a1a1a;
+ 
+}
+
+/* ========== FOOTER TOP SECTION ========== */
+.footer_parent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+  /* text-align: left; */
+  width: 85%;
+  margin: 0 auto;
+
+ 
+
+}
+
+.footer_logo_parent {
+  width: 30%;
+  min-width: 250px;
+}
+.footer_logo_parent p {
+  color: white;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Logo image stacking */
+.image_parent {
+  position: relative;
+}
+.image_parent :first-child {
+  position: absolute;
+  left: 19px;
+}
+
+/* Logo content */
+.footer_logo {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  color: white;
+}
+.logo_name :first-child {
+  font-weight: 100;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.logo_name :last-child {
+  font-size: 12px;
+  font-weight: 100;
+}
+
+/* Useful links section */
+.quick_links {
+  min-width: 150px;
+}
+.quick_links h4 {
+  color: rgba(228, 166, 51, 0.479);
+  margin-bottom: 10px;
+}
+.quick_links .links {
+  color: white;
+  font-weight: 100;
+  display: block;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+
+/* Subscribe section */
+.subscribe_parent {
+  min-width: 220px;
+}
+.subscribe_parent h4 {
+  color: rgba(228, 166, 51, 0.479);
+}
+.subscribe_parent p {
+  color: white;
+  margin: 10px 0;
+}
+.subscribe {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid white;
+}
+.subscribe input {
+  padding: 5px;
+  color: rgba(228, 166, 51, 0.479);
+  flex: 1;
+}
+.down_arrow {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+  color: white;
+  background-color: rgba(228, 166, 51, 0.479);
+  cursor: pointer;
+}
+
+.inputWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.inputWrapper input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  border: none;
+  outline: none;
+  color: rgba(228, 166, 51, 0.9);
+  background: transparent;
+}
+
+.down_arrow_inside {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: rgba(228, 166, 51, 0.9);
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 20px;
+  height: 20px;
+}
+
+
+/* ========== SOCIAL SECTION ========== */
+.bottom_parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 85%;
+  margin: 20px auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+}
+.social_parent {
+  display: flex;
+  gap: 10px;
+}
+.social_icon {
+  padding: 5px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+}
+
+/* ========== POLICY SECTION ========== */
+.policy_parent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0;
+  flex-wrap: wrap;
+}
+.policy_parent p {
+  color: white;
+  margin: 2px 10px;
+  font-size: 14px;
+}
+.policy_child span {
+  font-weight: 100;
+  padding-left: 5px;
+  color: white;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .footer_parent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer_logo_parent,
+  .quick_links,
+  .subscribe_parent {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+  }
+
+  .footer_logo {
+    justify-content: center;
+  }
+
+  .subscribe {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .subscribe input {
+    width: 100%;
+  }
+
+  .bottom_parent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 30px auto;
+  }
+
+  .policy_parent {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .policy_child {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .footer_parent {
+    padding: 20px 10px;
+  }
+
+  .footer_logo_parent,
+  .quick_links,
+  .subscribe_parent {
+    padding: 10px 0;
+  }
+
+  .subscribe input {
+    font-size: 14px;
+  }
+
+  .policy_parent {
+    font-size: 13px;
+    padding: 15px 0;
+  }
+
+  .social_parent {
+    justify-content: center;
+  }
+}
