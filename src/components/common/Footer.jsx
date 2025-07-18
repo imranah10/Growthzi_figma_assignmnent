@@ -1,6 +1,6 @@
 import React from 'react'
-import navlogo from '../images/navlogo/vector.png'
-import vector from '../images/navlogo/vector.svg'
+import navlogo from '../images/navlogo/Vector.png'
+import vector from '../images/navlogo/Vector.svg'
 import style from './Footer.module.css'
 import { FaChevronDown } from "react-icons/fa";
 import { Link } from 'react-router-dom';
