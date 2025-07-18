@@ -3,14 +3,14 @@ import style from './LuxuryExpe.module.css';
 import { FaAngleRight } from "react-icons/fa6";
 import { SlCalender } from "react-icons/sl";
 import { Link } from 'react-router-dom';
-import { Hero } from './Hero';
+// import { Hero } from './Hero';
 
 export const LuxuryExpe = () => {
   const defaultDate = "28 December 2023";
 
   return (
  <>
-  <Hero/>
+{/*   <Hero/> */}
     <div className={style.main}>
      <div className={style.box_parent}>
       <div className={style.box_content}>
